@@ -1,0 +1,242 @@
+body {
+	margin: 0;
+}
+
+
+h1, h2, h5 {
+color: #01937C;
+font-family: 'Raleway', sans-serif;
+/*text-shadow: 2px 2px grey; */
+}
+
+h3 {
+color: #01937C;
+font-family: 'Raleway', sans-serif;
+text-align: center;
+}
+
+a:link, a:visited, a:active {
+color: #01937C;
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+
+}
+
+a:hover {
+	color: #FFC074;
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+}
+
+
+p {
+	color: black;
+}
+
+/*WELCOME*/
+
+#profilePic {
+	border: solid 3px #01937C;
+	border-radius: 100%;
+	float: right;
+}
+
+#welcome {
+	padding: 2% 0% 0% 0%;
+}
+
+
+/* NAV BAR */
+.navbar {
+	background-image: linear-gradient(to right, #01937C, #B6C867);
+	font-family: 'Raleway', sans-serif;
+	padding-right: 5%;
+}
+
+.nav-item {
+	padding: 0px 18px;
+}
+
+.nav-link {
+	font-size: 1.2rem;
+}
+
+#navbarBrand {
+	font-size: 2.5rem; 
+	padding-left: 5%;
+}
+
+.header {
+	background-color: #FFC074;
+	padding: 3% 15%;
+	/*background-image: linear-gradient(to bottom, #FFC074, #FAF1E6);*/
+}
+
+/* PROJECTS */
+
+#projects {
+	padding: 5% 10%;
+}
+
+.project-box {
+	text-align: justify;
+	padding: 2% 5%;
+}
+
+
+.projectImages {
+	width: 600px;
+	height: 400px;
+	padding: auto;
+	display: block;
+	margin: auto;
+	border: 3px 3px outset transparent;
+  	transition: transform 0.3s;
+}
+
+.projectImages:hover {
+	border: solid 3px #FFC074;
+	-ms-transform: scale(1.03); 
+  	-webkit-transform: scale(1.03); /* Safari 3-8 */
+  	transform: scale(1.03);
+}
+
+#projectHeader {
+	text-align: center;
+}
+
+.projectDescription {
+	padding: 2% 10%;
+	text-align: justify;
+}
+
+
+/* SKILLS */
+
+#skills {
+	padding: 2% 10%;
+	background-color: #B6C867;
+}
+
+.skills-row {
+	align-content: center;
+
+}
+
+.skills-image {
+	width: 10%;
+	height: 10%;
+}
+
+.skills-image:hover {
+	background-color: #FFC074;
+	border-radius: 20%;
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: #FFC074;
+	/*background-image: linear-gradient(to top, #FFC074, #FAF1E6);*/
+	padding:  2% 10%;
+}
+
+.footerHr {
+	background-color: #FFC074;
+
+	padding:  0% 10%;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 18px;
+	color: #FAF1E6;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*CV SECTION*/
+
+
+/*Header*/
+#header {
+	padding: 5% 20% 2% 20%;
+
+}
+
+/*CV Body*/
+#cvSkills {
+	padding: 0% 20%;
+}
+ #experience {
+ 	padding:  2% 20%;
+ }
+
+ #education {
+ 	padding: 0% 20% 5% 20%
+ }
+
+ .cvList {
+ 	padding-top: 1%;
+ 	padding-left: 1%;
+ }
+
+ /*DRUMS*/
+ #drums {
+ 	padding: 0% 20%;
+ }
+
+.venueList, .festivalList {
+	font-size: 16px;
+	padding: 1% 0%;
+	list-style-type: none;
+	text-align: center;
+}
+
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+/*#drumPics {
+	padding: 2%, 20%;
+}*/
+
+.drumPics {
+	padding: 2%, 20%;
+}
+
+.card-text {
+	background-color: #B6C867;
+	padding: 2%;
+	text-align: justify;
+	border-radius: 3px;
+}
+
+/*.drums-row {
+	align-content: center;
+}*/
+
+
+/*SPORTS*/
+
+#sports {
+	padding: 2% 20%;
+}
+
+#videogames {
+	padding: 0% 20% 2% 20%;
+}
+
+/*
+FAF1E6 cream
+FFC074 orange
+B6C867 light green
+01937C dark green
+*/
