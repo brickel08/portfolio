@@ -246,7 +246,7 @@ section {
 }
 
 .project-subtitle {
-	margin: 1.5em 5em 0em 5em;
+	margin: 1.5em 0em;
 	text-align: justify;
 	display: flex;
 	font-family: var(--ff-secondary);
