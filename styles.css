@@ -360,7 +360,11 @@ section {
 	transform: scale(1.02);
 	opacity: 1;
 	border: 3px solid var(--clr-dark);
-	transition: 250ms;
+	transition: 500ms;
+}
+
+.project-img:not(:hover) {
+	transition: 500ms;
 }
 
 .project-subtitle {
