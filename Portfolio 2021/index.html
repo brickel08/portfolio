@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ben Rickel's Portfolio</title>
 		<link rel="icon" href="images/favicon.ico">
-		<!-- css stylesheet -->
-		<link rel="stylesheet" href="css/styles.css">
 		<!-- google fonts -->
 		<!-- railway -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +18,12 @@
 		<script src="https://kit.fontawesome.com/45622872d8.js" crossorigin="anonymous"></script>
 		<!-- bootstrap -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<!-- css stylesheet -->
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
-	<body style="background-color: #FAF1E6; font-family: 'Crete Round', serif; font-size: 18px;">
-		<section id="title">
-			<!-- nav bar -->
+	<body>
+		<!-- navbar -->
+		<header>
 			<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
 				<div class="container-fluid">
 					<a class="navbar-brand" id="navbarBrand" href="index.html">&#129345; Ben Rickel</a>
@@ -34,7 +34,7 @@
 						<ul class="navbar-nav">
 							<li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i></a></li>
 							<li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-							<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li> -->
 							<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/benjamin-rickel/"><i class="fab fa-linkedin"></i></a></li>
 							<li class="nav-item"><a class="nav-link" href="https://github.com/brickel08"><i class="fab fa-github"></i></a></li>
 							<li class="nav-item"><a class="nav-link" href="mailto: benjamin.rickel.jobs@gmail.com"><i class="fas fa-envelope"></i></a></li>
@@ -42,78 +42,81 @@
 					</div>
 				</div>
 			</nav>
-			<!-- navbar -->
-			<!-- bootstrap -->
-			<div class="container-fluid header">
-				<div class="row">
-					<div class="col-lg-6 col-md-4 col-sm-3 title">
-						<img src="images/profile pic.png" alt="ben rickel profile picture" id="profilePic">
-					</div>
-					<div class="col-lg-6 title">
-						<h1>Hi, I'm Ben!</h1>
-						<p><em><strong>Jr. Software Developer</strong></em></p>
-						<p>Java Programmer | Drummer | Former Bartender</p>
-					</div>
+		</header>
+		<!-- 		<header>
+				<nav class="nav navbar-expand-lg navbar-dark">
+						<a href="index.html" class="navbar-brand">&#129345; Ben Rickel</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burger" aria-controls="navbar-scroll"
+						aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse justify-content-end" id="burger">
+								<ul class="nav-list">
+										<li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+										<li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
+										<li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+										<li class="nav-item"><a href="https://www.linkedin.com/in/benjamin-rickel/" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+										<li class="nav-item"><a href="https://github.com/brickel08" class="nav-link"><i class="fab fa-github"></a></i></li>
+										<li class="nav-item"><a href="mailto: benjamin.rickel.jobs@gmail.com" class="nav-link"><i class="fas fa-envelope"></a></i></li>
+								</ul>
+						</div>
+				</nav>
+		</header> -->
+		<!-- introduction -->
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+			Hi, I'm </br>Ben Rickel!
+			</h1>
+			<p class="section-subtitle section-subtitle-intro">
+				Jr. Software Developer
+			</p>
+			<img src="images/profile pic.png" alt="Ben Rickel's profile pic" class="profile-pic">
+		</section>
+		<!-- welcome message -->
+		<h2 class="section-title-welcome">Welcome!</h2>
+		<section class="welcome">
+			<p class="welcome-message">
+				I'm a 31 year old software developer from Hopkins, MN. I love playing drums, videogames, and sports. When I'm not programming, I play drums in three touring bands. My favorite videogames are made by Nintendo, and I love playing my Switch while at home or on the go. My favorite sports team is the Minnesota Vikings. I watch every game every season!
+			</p>
+			<p class="welcome-instructions">
+				Below, you will find pictures and links to projects that I completed during my time at the Software Guild. In the navigation bar, you can find links to important social media including . You can also email me directly. </br></br><span class="thanks">Thanks for checking out my portfolio!</span>
+			</p>
+		</section>
+
+
+
+		<!-- my projects -->
+		<section class="my-projects">
+			<h2 class="section-title section-title-projects">Projects</h2>
+			<hr>
+			<div class="projects">
+				<div class="project">
+					<h3 class="section-subtitle-projects">Superhero Sightings</h3>
+					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/superherosightings"><img src="images/superhero.png" alt="superhero sighting" class="project-img"></a>
+					<p class="project-subtitle">A full-stack web app built from scratch using Spring framework that records Superhero sightings! I designed the database, used JDBC to query the database, wrote full unit tests for all components, and designed the UX/UI. Some of the languages used include Java, SQL, JDBC, Spring, JUnit, Bootstrap, JavaScript, CSS3, HTML5.</p>
+				</div>
+				<div class="project">
+					<h3 class="section-subtitle-projects">Vending Machine</h3>
+					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Vending%20Machine"><img src="images/vending.png" alt="vending machine" class="project-img"> </a>
+					<p class="project-subtitle">This web app is a Vending Machine Simulator! It uses AJAX calls to communicate with a server, which makes calculations and updates stock accordingly. Designed using AJAX, JavaScript, jQuery, CSS, and HTML.</p>
+				</div>
+				<div class="project">
+					<h3 class="section-subtitle-projects">Guess the Number</h3>
+					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/GuessTheNumber"><img src="images/guessthenumber.png" alt="guess the number" class="project-img"></a>
+					<p class="project-subtitle">This program generates a random four digit number and validates the user's guess. The program calculates and results, guesses, numbers generated, and stores them in a database. The application uses API calls through Postman to send HTTP requests and receives JSON data.</p>
+				</div>
+				<div class="project">
+					<h3 class="section-subtitle-projects">Ordering System</h3>
+					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Flooring%20Mastery"><img src="images/flooring.png" alt="flooring master" class="project-img"></a>
+					<p class="project-subtitle">A business application used to calculate total costs for flooring installations. Allows the user to create, read, edit, and delete orders. The orders are written and read from a file.</p>
 				</div>
 			</div>
 		</section>
-		<!-- end TITLE section -->
-		<!-- PROJECTS -->
-		<section id="welcome">
-			<div class="container-fluid">
-				<div class="row">
-					<p>
-						<center>
-						<h5>Take a look around, and learn a little bit about me! Below are links to projects I've completed, as well as some of my technical skills.</h5>
-						</center>
-					</p>
-					<p>
-						<center>
-						<h5>Head up to the navigation bar to check out the rest of my portfolio.</h5>
-						</center>
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="projects">
-			<div class="container-fluid">
-				<div class="row" id="projectHeader">
-					<h1>Projects</h1><hr>
-				</div>
-				<div class="row">
-					<div class="container-fluid project-box col-lg-6 col-md-4 col-sm-3">
-						<h3 class="picHeader">Superhero Sightings</h3>
-						<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/superherosightings"><img src="images/superhero.png" alt="superhero sighting" class="projectImages"></a>
-						<p class="projectDescription">A full-stack web app built from scratch using Spring framework that records Superhero sightings! I designed the database, used JDBC to query the database, wrote full unit tests for all components, and designed the UX/UI. Some of the languages used include Java, SQL, JDBC, Spring, JUnit, Bootstrap, JavaScript, CSS3, HTML5.</p>
-					</div>
-					<div class="project-box col-lg-6 col-md-4 col-sm-3">
-						<h3 class="picHeader">Vending Machine</h3>
-						<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Vending%20Machine"><img src="images/vending.png" alt="vending machine" class="projectImages"> </a>
-						<p class="projectDescription">This web app is a Vending Machine Simulator! It uses AJAX calls to communicate with a server, which makes calculations and updates stock accordingly. Designed using AJAX, JavaScript, jQuery, CSS, and HTML.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="container-fluid project-box col-lg-6 col-md-4 col-sm-3">
-						<h3 class="picHeader">Guess the Number</h3>
-						<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/GuessTheNumber"><img src="images/guessthenumber.png" alt="guess the number" class="projectImages"></a>
-						<p class="projectDescription">This program generates a random four digit number and validates the user's guess. The program calculates and results, guesses, numbers generated, and stores them in a database. The application uses API calls through Postman to send HTTP requests and receives JSON data.</p>
-					</div>
-					<div class="container-fluid project-box col-lg-6 col-md-4 col-sm-3">
-						<h3 class="picHeader">Ordering System</h3>
-						<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Flooring%20Mastery"><img src="images/flooring.png" alt="flooring master" class="projectImages"></a>
-						<p class="projectDescription">A business application used to calculate total costs for flooring installations. Allows the user to create, read, edit, and delete orders. The orders are written and read from a file.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- SKILLS -->
-		<section id="skills">
-			<div class="row" id="projectHeader">
-				<h1>Skills</h1><hr>
-			</div>
-			<div class="skills-row" >
-				<center>
-				<img class="skills-image" src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png"/>
+		<!-- skills -->
+		<section class="my-skills"><center>
+			<h2 class="section-title section-title-skills">Skills</h2>
+			<hr>
+			<div class="row">
+			<div class="skills">
+				<img class="skills-image" alt="java" src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png"/>
 				<img class="skills-image" src="https://img.icons8.com/color/144/000000/spring-logo.png"/>
 				<img class="skills-image" src="https://img.icons8.com/ios-glyphs/144/000000/sql.png"/>
 				<img class="skills-image" src="https://img.icons8.com/color/144/000000/json--v1.png"/>
@@ -121,38 +124,23 @@
 				<img class="skills-image" src="https://img.icons8.com/color/144/000000/javascript--v1.png"/>
 				<img class="skills-image" src="https://img.icons8.com/color/144/000000/css3.png"/>
 				<img class="skills-image" src="https://img.icons8.com/color/144/000000/html-5--v1.png"/>
-				</center>
-				<!-- 				<div id="skills-carousel" class="carousel slide d-flex" data-bs-ride="carousel" data-interval="1000">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png"/>
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/spring-logo.png"/>
-									<img class="skills-image" src="https://img.icons8.com/ios-glyphs/144/000000/sql.png"/>
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/json--v1.png"/>
-						</div>
-						<div class="carousel-item">
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/bootstrap.png"/>
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/javascript--v1.png"/>
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/css3.png"/>
-									<img class="skills-image" src="https://img.icons8.com/color/144/000000/html-5--v1.png"/>
-						</div>
-					</div>
-				</div> -->
 			</div>
+			</div>
+			</center>
 		</section>
-		<!-- FOOTER -->
-		<nav class="footer sticky-top navbar-expand-lg navbar-dark">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse justify-content-center" id="navbarBurger">
-					<ul class="navbar-nav justify-content-center">
-						<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/benjamin-rickel/"><i class="fab fa-linkedin" style=""></i></a></li>
-						<li class="nav-item"><a class="nav-link" href="https://github.com/brickel08"><i class="fab fa-github"></i></a></li>
-						<li class="nav-item"><a class="nav-link" href="mailto: benjamin.rickel.jobs@gmail.com"><i class="fas fa-envelope"></i></a></li>
-					</ul>
+		<!-- footer -->
+		<footer class="footer">
+			<ul class="social-list">
+				<li class="social-list-item"><a class="social-list-link" href="https://www.linkedin.com/in/benjamin-rickel/"><i class="fab fa-linkedin" style=""></i></a></li>
+				<li class="social-list-item"><a class="social-list-link" href="https://github.com/brickel08"><i class="fab fa-github"></i></a></li>
+				<li class="social-list-item"><a class="social-list-link" href="mailto: benjamin.rickel.jobs@gmail.com"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+			<section class="copyright">
+				<div class="copyright-text">
+					<p>&copy; Ben Rickel 2021</p>
 				</div>
-			</div>
-			<p id="copyright">&copy; Ben Rickel 2021</p>
-		</nav>
+			</section>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 	</body>
