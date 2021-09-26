@@ -251,8 +251,15 @@ section {
 	border-radius: 10px;
 }
 
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
 .thanks {
 	color: var(--clr-grey);
+	animation: blink 4s linear infinite;
 }
 
 @media screen and (max-width: 1200px) {
