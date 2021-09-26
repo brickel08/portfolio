@@ -222,6 +222,13 @@ section {
 		grid-template-columns: repeat(2, 1fr);
 
 	}
+	.welcome-message {
+		text-align: center;
+	}
+
+	.welcome-instructions {
+		text-align: center;
+	}
 }
 
 
@@ -235,7 +242,6 @@ section {
 	padding: 1em;
 	margin: 0% 10%;
 	font-size: var(--fs-h3);
-	text-align: center;
 	background-color: var(--clr-dark);
 	color: var(--clr-light);
 	border-radius: 10px;
@@ -245,7 +251,6 @@ section {
 	padding: 1em;
 	margin: 0% 10%;
 	font-size: var(--fs-h3);
-	text-align: center;
 	background-color: var(--clr-dark);
 	color: var(--clr-light);
 	border-radius: 10px;
