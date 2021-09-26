@@ -378,6 +378,7 @@ section {
 	padding: 2em;
 	overflow: auto;
 	justify-content: center;
+	width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
