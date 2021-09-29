@@ -400,8 +400,27 @@ section {
 }
 
 
-.skills-image {
+/*.skills-image {
 	border: 5px solid transparent;
+}*/
+
+.skills-image {
+	transform: opacity 250ms linear;
+	opacity: .75;
+/*	border: 3px solid var(--clr-grey);
+*/}
+
+.skills-image:hover,
+.skills-image:focus {
+	transform: scale(1.02);
+	opacity: 1;
+/*	border: 3px solid var(--clr-dark);
+*/	transition: 500ms;
+	background-color: var(--clr-grey);
+}
+
+.skills-image:not(:hover) {
+	transition: 500ms;
 }
 
 @media screen and (max-width: 1000px) {
