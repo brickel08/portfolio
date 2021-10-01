@@ -620,6 +620,22 @@ section {
 	background-image: linear-gradient(to bottom, var(--clr-grey), var(--clr-light), var(--clr-dark));
 }
 
+.download {
+	text-align: center;
+}
+
+.download-button {
+	background-color: var(--clr-light);
+	color: var(--clr-grey);
+	padding: 1em 2em;
+	font-size: var(--fs-body);
+	font-family: var(--ff-primary);
+	border-color: var(--clr-dark);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px grey;
+	animation: blink 2s linear infinite;
+}
+
 
 /* ABOUT ME SECTION */
 .drums {
@@ -638,15 +654,6 @@ section {
 	/*grid-template-rows: repeat(3, 1fr);*/
 	grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
 
-}
-
-figcaption {
-	/*text-align: center;*/
-}
-
-figure {
-	display: inline-block;
-	text-align: center;
 }
 
 
