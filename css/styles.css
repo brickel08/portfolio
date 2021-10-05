@@ -360,6 +360,50 @@ section {
 	}
 }
 
+/*PASSION PROJECTS*/
+
+.passion-projects {
+	width: 60%;
+	background-color: var(--clr-light);
+	color: var(--clr-grey);
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	display: grid;
+	opacity: 0.75;
+}
+
+.passion-projects:hover,
+.passion-projects:focus {
+	opacity: 1;
+	transition: 500ms;
+	background-color: var(--clr-dark);
+}
+
+.passion-projects:not(:hover) {
+	transition: 500ms;
+}
+
+#therope {
+	width: 40%;
+	height: 40%;
+	margin: auto;
+}
+
+#therope:hover {
+	border-color: var(--clr-light);
+}
+
+#band-subtitle {
+	margin-top: 20px;
+	color: var(--clr-grey);
+}
+
+#band-description {
+	margin: 2em 3em;
+}
+
 
 /* HOME PAGE SKILLS */
 
@@ -658,20 +702,12 @@ section {
 
 }
 
-
-
 .img-caption {
 	text-align: center;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 600px) {
 }
-
-
-
-
-
-
 
 
 
