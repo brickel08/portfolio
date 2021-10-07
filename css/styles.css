@@ -341,6 +341,37 @@ section {
 	transform: translate(0, -10px);
 }
 
+.tech {
+	column-count: 3;
+}
+
+@media screen and (max-width: 1200px) {
+	.projects {
+		padding: 1em 5%;
+	}
+
+	.project {
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	.project:hover {
+		box-shadow: 10px 10px 10px grey;
+
+	}
+
+	.tech {
+		column-count: 2;
+		padding: 0;
+	}
+
+	.section-subtitle-projects {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+}
+
+
 
 
 .project-img {
@@ -742,9 +773,7 @@ section {
 	column-count: 2;
 }
 
-.tech {
-	column-count: 3;
-}
+
 
 
 
