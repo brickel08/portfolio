@@ -305,6 +305,10 @@ section {
 	padding-top: 1.5em;
 }
 
+#tech-used {
+	text-align: left;
+}
+
 .projects {
 	display: grid;
 	/*grid-template-columns: repeat(2, 1fr);*/
@@ -362,12 +366,17 @@ section {
 
 	.tech {
 		column-count: 2;
+		column-gap: 5px;
 		padding: 0;
 	}
 
 	.section-subtitle-projects {
 		text-align: center;
 		font-size: 1.5rem;
+	}
+
+	#tech-used {
+		text-align: center;
 	}
 }
 
