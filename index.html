@@ -50,14 +50,14 @@
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burger" aria-controls="navbar-scroll"
 						aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 						<div class="collapse navbar-collapse justify-content-end" id="burger">
-										<ul class="nav-list">
-														<li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
-														<li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
-														<li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
-														<li class="nav-item"><a href="https://www.linkedin.com/in/benjamin-rickel/" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
-														<li class="nav-item"><a href="https://github.com/brickel08" class="nav-link"><i class="fab fa-github"></a></i></li>
-														<li class="nav-item"><a href="mailto: benjamin.rickel.jobs@gmail.com" class="nav-link"><i class="fas fa-envelope"></a></i></li>
-										</ul>
+												<ul class="nav-list">
+																		<li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+																		<li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
+																		<li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+																		<li class="nav-item"><a href="https://www.linkedin.com/in/benjamin-rickel/" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+																		<li class="nav-item"><a href="https://github.com/brickel08" class="nav-link"><i class="fab fa-github"></a></i></li>
+																		<li class="nav-item"><a href="mailto: benjamin.rickel.jobs@gmail.com" class="nav-link"><i class="fas fa-envelope"></a></i></li>
+												</ul>
 						</div>
 			</nav>
 		</header> -->
@@ -92,54 +92,129 @@
 		</section>
 		<!-- my projects -->
 		<section class="my-projects">
-			<h2 class="section-title section-title-projects">Software Guild Projects</h2>
+			<h2 class="section-title section-title-projects">Projects</h2>
 			<hr>
 			<div class="projects">
 				<div class="project">
 					<h3 class="section-subtitle-projects">Superhero Sightings</h3>
 					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/superherosightings"><img src="images/superhero.png" alt="superhero sighting" class="project-img"></a>
-					<p class="project-subtitle">A full-stack web app built from scratch using Spring framework that records Superhero sightings! I designed the database, used JDBC to query the database, wrote full unit tests for all components, and designed the UX/UI. Some of the languages used include Java, SQL, JDBC, Spring, JUnit, Bootstrap, JavaScript, CSS3, HTML5.</p>
+					<p class="project-subtitle">
+					This is my final project for the Software Guild - a full-stack web app built from scratch using Spring framework that records Superhero sightings! I integrated Java code with relational databases using Spring and JDBC Templates to store and retrieve data. The user can add relevant data using various Bootstrap forms. The application features a 'Live Newsfeed' that queries the superhero database and displays the ten most current superhero sightings based on date data. I used Java, Spring Boot, and JDBC Template to query the database to display current data to the user. Not only did I design the backend of the application, but I also designed the front end UI and UX. I hand-drafted multiple wireframes to organize my execution. I used CSS to design the interface in a beautiful and appealing experience. This project challenged me in many different ways, but I was able to create a project that I am very proud of.</p>
+					<h3 class="section-subtitle-projects" style="text-align: left;">Technologies Used</h3>
+					<ul class="tech">
+						<li>Java</li>
+						<li>SQL</li>
+						<li>JDBC Template</li>
+						<li>Spring Boot</li>
+						<li>Database Creation Script</li>
+						<li>Relational Databases</li>
+						<li>Entity Relationship Diagram</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>Error Handling</li>
+						<li>Validation</li>
+						<li>Wireframes</li>
+						<li>Unit Testing</li>
+						<li>CRUD Operations</li>
+					</ul>
 				</div>
 				<div class="project">
 					<h3 class="section-subtitle-projects">Vending Machine</h3>
 					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Vending%20Machine"><img src="images/vending.png" alt="vending machine" class="project-img"> </a>
-					<p class="project-subtitle">This web app is a Vending Machine Simulator! It uses AJAX calls to communicate with a server, which makes calculations and updates stock accordingly. Designed using AJAX, JavaScript, jQuery, CSS, and HTML.</p>
+					<p class="project-subtitle">This project is a fully functional vending machine simulator web-page. The web-page communicates to the Software Guild's live web-service to retrieve data, make calculations, and update inventory. I was given wireframes to use as a template to mimic a client's requirements. The layout of the webpage is responsive and uses three different forms to collect data from the user. The user may view all items in the vending machine, add money by clicking buttons, purchase items by clicking selection, and returns correct amount of change with a 'thank you' message.</p>
+					<h3 class="section-subtitle-projects" style="text-align: left;">Technologies Used</h3>
+					<ul class="tech">
+						<li>Java</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Bootstrap</li>
+						<li>REST API</li>
+						<li>Postman</li>
+						<li>JSON</li>
+						<li>HTTP Requests</li>
+						<li>Validation</li>
+						<li>Error Handling</li>
+						<li>Wireframes</li>
+					</ul>
 				</div>
 				<div class="project">
 					<h3 class="section-subtitle-projects">Guess the Number</h3>
 					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/GuessTheNumber"><img src="images/guessthenumber.png" alt="guess the number" class="project-img"></a>
-					<p class="project-subtitle">This program generates a random four digit number and validates the user's guess. The program calculates and results, guesses, numbers generated, and stores them in a database. The application uses API calls through Postman to send HTTP requests and receives JSON data.</p>
+					<p class="project-subtitle">A popular guessing game known as "Bulls and Cows." This program generates a random four digit number, where each digit is different, then checks and validates the user's guess against the generated answer. For each round, the user guesses a number and is told the exact and partial digit matches. The program calculates the results, guesses, numbers generated, and stores them in a database. The application uses API calls through Postman to send HTTP requests and receives JSON data.</p>
+					<h3 class="section-subtitle-projects" style="text-align: left;">Technologies Used</h3>
+					<ul class="tech">
+						<li>Java</li>
+						<li>Spring Boot</li>
+						<li>REST</li>
+						<li>Spring MVC Controller</li>
+						<li>JDBC Template</li>
+						<li>SQL</li>
+						<li>HTTP Methods</li>
+						<li>Service Layer</li>
+						<li>JUnit Tests</li>
+						<li>CRUD</li>
+						<li>JSON</li>
+						<li>Business Logic</li>
+						<li>Validation</li>
+						<li>Postman</li>
+					</ul>
 				</div>
 				<div class="project">
 					<h3 class="section-subtitle-projects">Ordering System</h3>
 					<a href="https://github.com/brickel08/SG-Completed-Projects/tree/main/Flooring%20Mastery"><img src="images/flooring.png" alt="flooring master" class="project-img"></a>
-					<p class="project-subtitle">A business application used to calculate total costs for flooring installations. Allows the user to create, read, edit, and delete orders. The orders are written and read from a file.</p>
+					<p class="project-subtitle">A console application for a ficticious flooring company ordering system. This project was written using enterprise MVC architecture and follows an agile approach to its development. The app writes/reads data to and from files using standard CRUD operations. The program uses complex methods written in a service layer to perform calculations and make logical validations based on user input. Includes full unit tests for all interfaces.</p>
+					<h3 class="section-subtitle-projects" style="text-align: left;">Technologies Used</h3>
+					<ul class="tech">
+						<li>Java</li>
+						<li>RegEx</li>
+						<li>N-tier MVC Architecture</li>
+						<li>Service Layer</li>
+						<li>Business Logic</li>
+						<li>Spring Dependency Injection</li>
+						<li>JUnit Testing</li>
+						<li>Validation</li>
+					</ul>
 				</div>
 			</div>
 			<!-- 			<h2 class="section-title section-title-projects">Passion Projects</h2>
 			<hr>
 			<div class="projects">
 				<div class="project">
-						<h3 class="section-subtitle-projects">Band Webpage</h3>
-						<img src="images/therope_website.png" alt="the rope Webpage" class="project-img">
-						<p class="project-subtitle">
+					<h3 class="section-subtitle-projects">Band Webpage</h3>
+					<img src="images/therope_website.png" alt="the rope Webpage" class="project-img">
+					<p class="project-subtitle">
 									I created a webpage for my band The Rope! Here, you can stream all of our music, watch all of our videos, view an archive of show flyers, buy merchandise, and even inquire for booking. This is a work in progress, as we have not published the webpage publicly yet.
-						</p>
+					</p>
 				</div>
 			</div> -->
 		</section>
-		<h2 class="section-title section-title-projects">Passion Projects</h2>
+		<h2 class="section-title section-title-projects">Works In Progress</h2>
 		<hr>
 		<section class="passion-projects">
-			
 			<div class="passion-project">
 				<h3 class="section-subtitle-projects" id="band-subtitle">Band Webpage</h3>
 				<img src="images/therope_website.png" alt="the rope Webpage" class="project-img" id="therope">
-					<p class="project-subtitle" id="band-description">
-						I created a webpage for my band The Rope! Here, you can stream all of our music, watch all of our videos, view an archive of show flyers, buy merchandise, and even inquire for booking. This is a work in progress, as we have not published the webpage publicly yet.
-					</p>
+				<p class="project-subtitle" id="band-description">
+					I created a webpage for my band The Rope! Here, you can stream all of our music, watch all of our videos, view an archive of show flyers, buy merchandise, and even inquire for booking. This is a work in progress, as we have not published the webpage publicly yet.
+				</p>
 			</div>
 		</section>
+		<!-- 		<section>
+				<h3 class="section-subtitle-projects" id="band-subtitle">Band Webpage</h3>
+					<div class="row">
+							<div class="column">
+									<img src="images/therope_website.png" alt="">
+							</div>
+							<div class="column">
+									<p>
+											I created a webpage for my band The Rope! Here, you can stream all of our music, watch all of our videos, view an archive of show flyers, buy merchandise, and even inquire for booking. This is a work in progress, as we have not published the webpage publicly yet.
+									</p>
+							</div>
+					</div>
+		</section> -->
 		<!-- skills -->
 		<section class="my-skills"><center>
 			<h2 class="section-title section-title-skills">Skills</h2>

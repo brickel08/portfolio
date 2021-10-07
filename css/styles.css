@@ -292,11 +292,12 @@ section {
 }
 
 .section-subtitle-projects {
-	color: var(--clr-mid);
+	color: var(--clr-grey);
 	font-weight: var(--fw-bold);
 	margin-bottom: 1em;
 	text-align: center;
 	font-family: var(--ff-primary);
+	font-size: 2rem;
 }
 
 .section-title-projects {
@@ -311,6 +312,7 @@ section {
 	padding: 2em;
 	overflow: auto;
 	justify-content: center;
+
 }
 
 @media screen and (min-width: 1850px) {
@@ -325,9 +327,21 @@ section {
 
 .project {
 	padding: 2em;
-	opacity: auto;
-
+	background-color: var(--clr-light);
+	margin: 1em;
+	border-radius: 20px;
+	border: solid 10px;
+	border-color: var(--clr-dark);
+	color: var(--clr-dark);
+	box-shadow: 5px 5px 5px grey;
+	transition: 0.3s;
 }
+
+.project:hover {
+	transform: translate(0, -10px);
+}
+
+
 
 .project-img {
 	transform: opacity 250ms linear;
@@ -385,9 +399,10 @@ section {
 	transition: 500ms;
 }
 
+
 #therope {
-	width: 40%;
-	height: 40%;
+	width: 80%;
+	height: 80%;
 	margin: auto;
 }
 
@@ -402,6 +417,20 @@ section {
 
 #band-description {
 	margin: 2em 3em;
+}
+
+@media screen and (max-width: 1200px) {
+	.passion-projects {
+		display: block;
+		border: 5px solid var(--clr-grey);
+		border-radius: 10px;
+		width: 80%;
+	}
+
+	#therope {
+		width: 80%;
+		height: 80%;
+	}
 }
 
 
@@ -709,7 +738,13 @@ section {
 @media only screen and (min-width : 320px) and (max-width : 600px) {
 }
 
+.row {
+	column-count: 2;
+}
 
+.tech {
+	column-count: 3;
+}
 
 
 
